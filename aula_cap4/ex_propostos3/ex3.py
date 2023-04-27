@@ -5,6 +5,6 @@ arr = np.loadtxt('aula_cap4/files/space.csv',
                  encoding='utf-8', 
                  dtype=str)
 
-cond = (arr == 'Success')
+cond = np.char.endswith(arr,'USA')
 
-print((len(arr[cond]) / len(arr[1:,7]))*100, '% das missões tiveram sucesso')
+print('Quantidade de missões realizadas pelos EUA =',len(arr[cond]))

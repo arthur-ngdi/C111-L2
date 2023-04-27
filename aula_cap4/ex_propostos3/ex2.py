@@ -5,6 +5,7 @@ arr = np.loadtxt('aula_cap4/files/space.csv',
                  encoding='utf-8', 
                  dtype=str)
 
-cond = (arr == 'Success')
+arr2 = arr[1:,6].copy()
+cond = arr[1:,6].astype(np.float64) > 0
 
-print((len(arr[cond]) / len(arr[1:,7]))*100, '% das missões tiveram sucesso')
+print('média = ',np.mean(arr2[cond].astype(np.float64)))

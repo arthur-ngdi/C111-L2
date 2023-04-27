@@ -8,4 +8,4 @@ arr = np.loadtxt('aula_cap4/files/space.csv',
 
 #print(arr[1:,1])
 
-print(/np.unique(arr[1:,1], return_counts=True))
+print(np.unique(arr[1:,1], return_counts=True))
