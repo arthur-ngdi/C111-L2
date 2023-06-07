@@ -9,7 +9,7 @@ empresa = arr[0:,1] #Seleciona da primeira linha até ultima os elementos da pri
 missoes = arr[empresa == "SpaceX"] #Dentro array principal (arr) seleciona-se as informações onde o nome da empresa é SpaceX
 custo = missoes[0:,6] #Seleciona-se dentro do array de missoes apenas o custo das missoes feitas pela SpaceX
 
-print(max(custo)) #Printa o máximo dos custo selecionados
+print(custo) #Printa o máximo dos custo selecionados
 
 
 
